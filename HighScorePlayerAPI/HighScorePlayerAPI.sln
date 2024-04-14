@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighScorePlayerAPI", "HighScorePlayerAPI.csproj", "{C408E23D-C8A7-463A-9B6C-BC14301648F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C408E23D-C8A7-463A-9B6C-BC14301648F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C408E23D-C8A7-463A-9B6C-BC14301648F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C408E23D-C8A7-463A-9B6C-BC14301648F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C408E23D-C8A7-463A-9B6C-BC14301648F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D11CB847-2109-4550-84F0-CD8DBBDE0FCD}
+	EndGlobalSection
+EndGlobal
