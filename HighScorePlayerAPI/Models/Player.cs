@@ -1,8 +1,12 @@
-﻿namespace HighScorePlayerAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HighScorePlayerAPI.Models;
 
 public class Player
 {
-    public int Id { get; set; }
-    public string Player_Name { get; set; }
-    public double Score { get; set; }
+    [Key]
+    public int Player_Id { get; set; }
+    public string Username { get; set; }
+    private string Login { get; set; } = null;
+    private string Password { get; set; } = null;
 }

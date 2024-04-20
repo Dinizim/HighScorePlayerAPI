@@ -22,7 +22,7 @@ namespace HighScorePlayerAPI.Controllers
         [HttpGet("Players/{id}")]
         public async Task<IActionResult> GetPlayerAsync([FromServices] AppDbContext context, [FromRoute] int id)
         {
-            var player = await context.Players.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+            var player = await context.Players.AsNoTracking().FirstOrDefaultAsync(x => x.Player_Id == id);
             return player == null ? NotFound() : Ok(player);
         }
 
@@ -39,7 +39,7 @@ namespace HighScorePlayerAPI.Controllers
                 await context.Players.AddAsync(player);
                 await context.SaveChangesAsync();
 
-                return Created($"v1/Players/{player.Id}", player);
+                return Created($"v1/Players/{player.Player_Id}", player);
             }
             catch (Exception e)
             {
@@ -52,7 +52,7 @@ namespace HighScorePlayerAPI.Controllers
         [FromServices] AppDbContext context,
         [FromRoute] int id)
         {
-            var player = await context.Players.FirstOrDefaultAsync(x => x.Id == id);
+            var player = await context.Players.FirstOrDefaultAsync(x => x.Player_Id == id);
             if (player == null)
                 return NotFound();
             try
