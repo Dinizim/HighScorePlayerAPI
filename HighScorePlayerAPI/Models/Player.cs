@@ -9,4 +9,7 @@ public class Player
     public string Username { get; set; }
     private string Login { get; set; } = null;
     private string Password { get; set; } = null;
+
+    [Required]
+    public ICollection<HighScore> HighScores { get; set; }
 }

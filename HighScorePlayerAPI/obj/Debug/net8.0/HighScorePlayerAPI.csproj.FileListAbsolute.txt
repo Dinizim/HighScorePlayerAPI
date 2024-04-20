@@ -1,3 +1,11 @@
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.csproj.AssemblyReference.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.AssemblyInfoInputs.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.AssemblyInfo.cs
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.sourcelink.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\appsettings.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\HighScorePlayerAPI.exe
@@ -104,14 +112,6 @@ C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.csproj.AssemblyReference.cache
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.AssemblyInfoInputs.cache
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.AssemblyInfo.cs
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.csproj.CoreCompileInputs.cache
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\HighScorePlayerAPI.sourcelink.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nicol\OneDrive\Documentos\GitHub\HighScorePlayerAPI\HighScorePlayerAPI\obj\Debug\net8.0\staticwebassets\msbuild.HighScorePlayerAPI.Microsoft.AspNetCore.StaticWebAssets.props
