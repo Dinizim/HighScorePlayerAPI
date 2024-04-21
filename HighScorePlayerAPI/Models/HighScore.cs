@@ -3,7 +3,7 @@
 public class HighScore
 {
     public int HighScoreId { get; set; }
-    public int Score { get; set; }
+    public double Score { get; set; }
  
     public int PlayerId { get; set; }
     public Player Player { get; set; }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace HighScorePlayerAPI.Models;
 
@@ -10,6 +11,6 @@ public class Player
     private string Login { get; set; } = null;
     private string Password { get; set; } = null;
 
-    [Required]
+    [JsonIgnore]
     public ICollection<HighScore> HighScores { get; set; }
 }

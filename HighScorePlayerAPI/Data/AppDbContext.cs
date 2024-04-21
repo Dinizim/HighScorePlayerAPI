@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HighScorePlayerAPI.Data;
 
-//TODO : Apply Data Modeling
+
 public class AppDbContext : DbContext
 {
     public DbSet<Player> Players { get; set; }
@@ -19,12 +19,12 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<HighScore>()
             .HasOne(hs => hs.Player)
             .WithMany(p => p.HighScores)
-            .HasForeignKey(hs => hs.PlayerId);
+            .HasForeignKey(fk => fk.PlayerId);
 
         modelBuilder.Entity<HighScore>()
              .HasOne(hs => hs.Game)
              .WithMany(game => game.HighScores)
-             .HasForeignKey(hs => hs.GameId);
+             .HasForeignKey(fk => fk.GameId);
 
     }
 
