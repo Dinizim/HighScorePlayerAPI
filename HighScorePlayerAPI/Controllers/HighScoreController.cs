@@ -12,13 +12,14 @@ namespace HighScorePlayerAPI.Controllers
     [Route("v1")]
     public class HighScoreController : ControllerBase
     {
+        // TODO : entidades game e player estao sendo passadas como NULL
         [HttpGet("Highscores")]
         public async Task<IActionResult> GetScoresAsync([FromServices] AppDbContext context)
         {
             var highscores = await context.HighScores.AsNoTracking().ToListAsync();
             return Ok(highscores);
         }
-
+        // TODO : entidades game e player estao sendo passadas como NULL
         [HttpGet("Highscores/{id}")]
         public async Task<IActionResult> GetScoreAsync([FromServices] AppDbContext context, [FromRoute] int id)
         {
@@ -53,6 +54,7 @@ namespace HighScorePlayerAPI.Controllers
             }
             catch (Exception ex)
             {
+                //TODO : Tratar de maneira adqueada
                 return StatusCode(500);
             }
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HighScorePlayerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5af125c1088dd7418615af6acdcd3a427fabca79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51f40a5d55732ea52737e5a1ae6a9f407c1aaa4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("HighScorePlayerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HighScorePlayerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
