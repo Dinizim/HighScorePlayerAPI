@@ -12,19 +12,46 @@ namespace HighScorePlayerAPI.Controllers
     [Route("v1")]
     public class HighScoreController : ControllerBase
     {
-        // TODO : entidades game e player estao sendo passadas como NULL
         [HttpGet("Highscores")]
         public async Task<IActionResult> GetScoresAsync([FromServices] AppDbContext context)
         {
-            var highscores = await context.HighScores.AsNoTracking().ToListAsync();
-            return Ok(highscores);
+            try
+            {
+                var highscores = await context
+                    .HighScores
+                    .AsNoTracking()
+                    .Include(x => x.Player)
+                    .Include(x => x.Game)
+                    .ToListAsync();
+
+                return Ok(highscores);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ERROR: Get Scores - {ex.Message}");
+                return StatusCode(500);
+            }
         }
-        // TODO : entidades game e player estao sendo passadas como NULL
+
         [HttpGet("Highscores/{id}")]
         public async Task<IActionResult> GetScoreAsync([FromServices] AppDbContext context, [FromRoute] int id)
         {
-            var highscore = await context.HighScores.AsNoTracking().FirstOrDefaultAsync(x => x.HighScoreId == id);
-            return highscore == null ? NotFound() : Ok(highscore);
+            try
+            {
+                var highscore = await context
+                    .HighScores
+                    .AsNoTracking()
+                    .Include(x => x.Player)
+                    .Include(x => x.Game)
+                    .FirstOrDefaultAsync(x => x.HighScoreId == id);
+
+                return highscore == null ? NotFound() : Ok(highscore);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ERROR: Get Score - {ex.Message}");
+                return StatusCode(500);
+            }
         }
 
         [HttpPost("Highscores")]
@@ -54,32 +81,40 @@ namespace HighScorePlayerAPI.Controllers
             }
             catch (Exception ex)
             {
-                //TODO : Tratar de maneira adqueada
+                Console.WriteLine($"ERROR: Create Score - {ex.Message}");
                 return StatusCode(500);
             }
         }
 
         private async Task<Player> GetOrCreatePlayerAsync(AppDbContext _context, string playerName)
         {
-            var player = await _context.Players.FirstOrDefaultAsync(p => p.Username == playerName);
+            var player = await _context
+                .Players
+                .FirstOrDefaultAsync(p => p.Username == playerName);
+
             if (player == null)
             {
                 player = new Player { Username = playerName };
                 _context.Players.Add(player);
                 await _context.SaveChangesAsync();
             }
+
             return player;
         }
 
         private async Task<Game> GetOrCreateGameAsync(AppDbContext _context, string gameName)
         {
-            var game = await _context.Games.FirstOrDefaultAsync(g => g.Name == gameName);
+            var game = await _context
+                .Games
+                .FirstOrDefaultAsync(g => g.Name == gameName);
+
             if (game == null)
             {
                 game = new Game { Name = gameName, Type = "Default" };
                 _context.Games.Add(game);
                 await _context.SaveChangesAsync();
             }
+
             return game;
         }
     }
